@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: argocd
 resources:
 - https://raw.githubusercontent.com/argoproj/argo-cd/v3.0.6/manifests/install.yaml
+- https://github.com/argoproj-labs/argocd-image-updater/tree/v0.16.0/manifests/base
 - ns.yaml
 secretGenerator:
   - name: my-repo
